@@ -1,0 +1,1 @@
+angular.module("agentada",[]).controller("EventsController",["$scope",function(e){e.events=[{text:"Ithaca Bakery",time:"08:00"},{text:"Tech Talk",time:"10:00"}],e.addEvent=function(){e.events.push({text:e.eventText,time:e.eventTime}),e.eventText="",e.eventTime=""}}]);

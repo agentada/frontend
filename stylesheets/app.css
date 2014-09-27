@@ -22339,3 +22339,8 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
+/* line 4, ../scss/_nav.scss */
+nav {
+  height: 50px;
+  background-color: lightblue;
+}
