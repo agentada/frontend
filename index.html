@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
+    <!--<script src="https://cdn.socket.io/socket.io-1.1.0.js"></script>-->
+    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>-->
+    <!--<script src="bower_components/sails.io.js/dist/sails.io.js"></script>-->
     <script src="js/agentada.js"></script>
+
   </head>
   <body>
 
@@ -21,8 +27,7 @@
           <button data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">+</button>
           
         </div>
-        <h2>Events</h2>
-
+        <div ng-view></div>
         <div ng-controller="EventsController">
           <ul>
             <li ng-repeat="event in events">
@@ -42,6 +47,9 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    
     <script src="js/app.js"></script>
+<script src="http://agentada-coldencullen.rhcloud.com/js/dependencies/sails.io.js"></script>
+
   </body>
 </html>
